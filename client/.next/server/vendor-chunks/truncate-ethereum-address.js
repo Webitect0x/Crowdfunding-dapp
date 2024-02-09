@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/truncate-ethereum-address";
+exports.ids = ["vendor-chunks/truncate-ethereum-address"];
+exports.modules = {
+
+/***/ "(ssr)/./node_modules/truncate-ethereum-address/dist/truncate-ethereum-address.esm.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/truncate-ethereum-address/dist/truncate-ethereum-address.esm.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   truncate: () => (/* binding */ truncate)\n/* harmony export */ });\nvar opening = {\n    braces: \"{\",\n    brackets: \"[\",\n    parenthesis: \"(\"\n};\nvar closing = {\n    braces: \"}\",\n    brackets: \"]\",\n    parenthesis: \")\"\n};\nfunction truncate(address, _temp) {\n    var _ref = _temp === void 0 ? {} : _temp, nPrefix = _ref.nPrefix, nSuffix = _ref.nSuffix, separator = _ref.separator;\n    var match = address.match(/^(0x[a-zA-Z0-9])[a-zA-Z0-9]+([a-zA-Z0-9])$/);\n    var nTotalIsLongerThanAddress = (nPrefix || 0) + (nSuffix || 0) > address.length;\n    return match && !nTotalIsLongerThanAddress ? \"0x\" + address.slice(2, 2 + (nPrefix || 4)) + (separator ? opening[separator] : \"\") + \"…\" + (separator ? closing[separator] : \"\") + address.slice(address.length - (nSuffix || 4)) : address;\n}\n //# sourceMappingURL=truncate-ethereum-address.esm.js.map\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvdHJ1bmNhdGUtZXRoZXJldW0tYWRkcmVzcy9kaXN0L3RydW5jYXRlLWV0aGVyZXVtLWFkZHJlc3MuZXNtLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxJQUFJQSxVQUFVO0lBQ1pDLFFBQVE7SUFDUkMsVUFBVTtJQUNWQyxhQUFhO0FBQ2Y7QUFDQSxJQUFJQyxVQUFVO0lBQ1pILFFBQVE7SUFDUkMsVUFBVTtJQUNWQyxhQUFhO0FBQ2Y7QUFDQSxTQUFTRSxTQUFTQyxPQUFPLEVBQUVDLEtBQUs7SUFDOUIsSUFBSUMsT0FBT0QsVUFBVSxLQUFLLElBQUksQ0FBQyxJQUFJQSxPQUNqQ0UsVUFBVUQsS0FBS0MsT0FBTyxFQUN0QkMsVUFBVUYsS0FBS0UsT0FBTyxFQUN0QkMsWUFBWUgsS0FBS0csU0FBUztJQUM1QixJQUFJQyxRQUFRTixRQUFRTSxLQUFLLENBQUM7SUFDMUIsSUFBSUMsNEJBQTRCLENBQUNKLFdBQVcsS0FBTUMsQ0FBQUEsV0FBVyxLQUFLSixRQUFRUSxNQUFNO0lBQ2hGLE9BQU9GLFNBQVMsQ0FBQ0MsNEJBQTRCLE9BQU9QLFFBQVFTLEtBQUssQ0FBQyxHQUFHLElBQUtOLENBQUFBLFdBQVcsTUFBT0UsQ0FBQUEsWUFBWVgsT0FBTyxDQUFDVyxVQUFVLEdBQUcsRUFBQyxJQUFLLE1BQVlBLENBQUFBLFlBQVlQLE9BQU8sQ0FBQ08sVUFBVSxHQUFHLEVBQUMsSUFBS0wsUUFBUVMsS0FBSyxDQUFDVCxRQUFRUSxNQUFNLEdBQUlKLENBQUFBLFdBQVcsTUFBTUo7QUFDek87QUFFb0IsQ0FDcEIseURBQXlEIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2xpZW50Ly4vbm9kZV9tb2R1bGVzL3RydW5jYXRlLWV0aGVyZXVtLWFkZHJlc3MvZGlzdC90cnVuY2F0ZS1ldGhlcmV1bS1hZGRyZXNzLmVzbS5qcz83MTQwIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBvcGVuaW5nID0ge1xuICBicmFjZXM6ICd7JyxcbiAgYnJhY2tldHM6ICdbJyxcbiAgcGFyZW50aGVzaXM6ICcoJ1xufTtcbnZhciBjbG9zaW5nID0ge1xuICBicmFjZXM6ICd9JyxcbiAgYnJhY2tldHM6ICddJyxcbiAgcGFyZW50aGVzaXM6ICcpJ1xufTtcbmZ1bmN0aW9uIHRydW5jYXRlKGFkZHJlc3MsIF90ZW1wKSB7XG4gIHZhciBfcmVmID0gX3RlbXAgPT09IHZvaWQgMCA/IHt9IDogX3RlbXAsXG4gICAgblByZWZpeCA9IF9yZWYublByZWZpeCxcbiAgICBuU3VmZml4ID0gX3JlZi5uU3VmZml4LFxuICAgIHNlcGFyYXRvciA9IF9yZWYuc2VwYXJhdG9yO1xuICB2YXIgbWF0Y2ggPSBhZGRyZXNzLm1hdGNoKC9eKDB4W2EtekEtWjAtOV0pW2EtekEtWjAtOV0rKFthLXpBLVowLTldKSQvKTtcbiAgdmFyIG5Ub3RhbElzTG9uZ2VyVGhhbkFkZHJlc3MgPSAoblByZWZpeCB8fCAwKSArIChuU3VmZml4IHx8IDApID4gYWRkcmVzcy5sZW5ndGg7XG4gIHJldHVybiBtYXRjaCAmJiAhblRvdGFsSXNMb25nZXJUaGFuQWRkcmVzcyA/IFwiMHhcIiArIGFkZHJlc3Muc2xpY2UoMiwgMiArIChuUHJlZml4IHx8IDQpKSArIChzZXBhcmF0b3IgPyBvcGVuaW5nW3NlcGFyYXRvcl0gOiAnJykgKyBcIlxcdTIwMjZcIiArIChzZXBhcmF0b3IgPyBjbG9zaW5nW3NlcGFyYXRvcl0gOiAnJykgKyBhZGRyZXNzLnNsaWNlKGFkZHJlc3MubGVuZ3RoIC0gKG5TdWZmaXggfHwgNCkpIDogYWRkcmVzcztcbn1cblxuZXhwb3J0IHsgdHJ1bmNhdGUgfTtcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPXRydW5jYXRlLWV0aGVyZXVtLWFkZHJlc3MuZXNtLmpzLm1hcFxuIl0sIm5hbWVzIjpbIm9wZW5pbmciLCJicmFjZXMiLCJicmFja2V0cyIsInBhcmVudGhlc2lzIiwiY2xvc2luZyIsInRydW5jYXRlIiwiYWRkcmVzcyIsIl90ZW1wIiwiX3JlZiIsIm5QcmVmaXgiLCJuU3VmZml4Iiwic2VwYXJhdG9yIiwibWF0Y2giLCJuVG90YWxJc0xvbmdlclRoYW5BZGRyZXNzIiwibGVuZ3RoIiwic2xpY2UiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/truncate-ethereum-address/dist/truncate-ethereum-address.esm.js\n");
+
+/***/ })
+
+};
+;
